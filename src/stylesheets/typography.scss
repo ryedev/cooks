@@ -1,23 +1,24 @@
-@font-face {
-  font-family: '';
-  src: url('') format('truetype')
-}
+// @font-face {
+//   font-family: 'brandon';
+//   src: url('') format('truetype')
+// }
 
-h1, h2, h3, p {
-  font-family: 'nimbus-sans';
-  font-weight: 300;
+h1, h2, h3 {
+  font-family: 'brandon-grotesque';
+  font-weight: 500;
   color: $gray;
 }
 
 h4, h5, h6 {
-  font-family: 'nimbus-sans';
-  font-weight: 300;
+  font-family: 'brandon-grotesque';
+  font-weight: 400;
   color: $gray;
 }
 
 p {
-  font-family: 'Jubliat';
-  color: $gray;
+ font-family: 'brandon-grotesque';
+ font-weight: 300;
+ color: $gray; 
 }
 
 /* Document level adjustments */
