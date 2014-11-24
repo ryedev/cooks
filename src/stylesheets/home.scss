@@ -1,7 +1,6 @@
  .hero-banner {
   position: relative;
   width: 100%;
-  height: 440px;
   background: url('');
   background-size: cover;
 
@@ -16,7 +15,6 @@
     height:100%;
     background-color: rgba(81, 20, 2, 0.57);
     z-index:1;
-    padding-top: 90px;
   }
 
   #headline {
@@ -38,67 +36,30 @@
   }
 }
 
-// main content section of index
-.main-content {
+// surprisingly comfortable section of page
+.surp-comf {
   background: url('');
   border-bottom: 1px solid $gray;
 
   h2 {
     text-transform: capitalize;
-    padding-top: 30px;
-    font-weight: 600;
-    margin-bottom: 26px;
   }
 }
 
-// sub content work with and case study section
-.sub-content {
-  padding: 20px 30px 16px;
-  height: 520px;
 
-  .case-studies {
-    padding: 0;
-
-    .left-img {
-      position: relative;
+// durable section of page
+.durable {
+  .content{
+    padding-left: 0;
+    vertical-align: top;
+    display: inline-block;
+   
+    h5 {
+      margin: 10px 0 0 0;
     }
 
-    .content{
-      padding-left: 0;
-      vertical-align: top;
-      display: inline-block;
-     
-      h5 {
-        margin: 10px 0 0 0;
-      }
-
-      p {
-        color: $gray;
-      }
-
-      a {
-        img {
-          transition: all 0.3s ease;
-          &:hover {
-            margin-left: 6px;
-          }
-        }
-      }
-    }
-
-  }
-
-  .start-project {
-    .content{
-      vertical-align: top;
-      display: inline-block;
-      h5 {
-        margin: 10px 0 0 0;
-      }
-
-      p {
-        color: $gray;
-      }
+    p {
+      color: $gray;
     }
 
     a {
@@ -108,14 +69,9 @@
           margin-left: 6px;
         }
       }
-
-    }
-
-    .white-out-phone {
-
     }
   }
-} /* end subcontent */
+}
 
  //               _     _ _        __ _         _           
  //   /\/\   ___ | |__ (_) | ___  / _\ |_ _   _| | ___  ___ 
@@ -125,10 +81,6 @@
  //                                       |___/              
 
 @media only screen { 
-
-  h1, h2, h3, p {
-    
-  }
 
   .hero-banner {
     height: 150px;
@@ -149,7 +101,7 @@
     }
   }
 
-  .main-content {
+  .surp-comf {
     padding: 4px 10px 20px;
     h2 {
       // padding-top: 0;
@@ -161,85 +113,24 @@
     p {
       font-size: 1.2em;
     }
+  }
 
-    .gif-mobile {
+  .durable {
+    height: 560px;
 
-      h6 {
-        font-size: 0.9em;
+    .content {
+      margin-left: 0;
+      
+      h5 {
         text-align: center;
       }
 
-      img {
-        margin-bottom: 6px;
-      }
-
-    }
-
-  }
-
-  .sub-content {
-    height: 560px;
-    .case-studies {
-      text-align: center;
-
-      .content {
-        margin-left: 0;
-        
-        h5 {
-          text-align: center;
-        }
-
-        p {
-          width: 77%;
-          text-align: center;
-          margin: 0 auto;
-          font-size: 1.3em;
-          margin-bottom: 8px;
-        }
-      
-      }
-
-      .left-img {
-        display: none;
-      }
-
-      h5 {
-        font-size: 1.7em;
-        display: inline-block;
-      }
-      a {
-
-      }
-    }
-
-    .start-project {
-      padding: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      .content {
-        margin-left: 0;
-        padding-left: 0;
-  
-        p {
-          font-size: 1.3em;
-          margin: 0 auto 8px;
-          text-align: center;
-          width: 77%;
-        }
-      }
-
-      .right-img {
-        display: none;
-      }
-
-      h5 {
-        font-size: 1.6em;
-        display: inline-block;
-      }
-
-      a {
- 
+      p {
+        width: 77%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.3em;
+        margin-bottom: 8px;
       }
     }
   }
@@ -260,7 +151,6 @@
 // _\ \ | | | | | (_| | | | _\ \ (__| | |  __/  __/ | | \__ \
 // \__/_| |_| |_|\__,_|_|_| \__/\___|_|  \___|\___|_| |_|___/
                                                           
-// Min-width 401px;
 @media only screen and (min-width: 400px){
   .hero-banner {
     height: 220px;
@@ -277,84 +167,32 @@
     }
   }
 
-  .main-content {
+  .surp-comf {
     padding-bottom: 30px;
 
     h2 {
       
     }
 
-    .gif{
-      
-    }
-
     p {
       font-size: 1.3em;
     }
-
-    .gif-mobile {
-
-      h6 {
-       font-size: 0.9em;
-       margin-top: 14px;
-      }
-
-      img {
-        margin-bottom: 0;
-      }
-
-    }
-
   }
 
-  .sub-content {
+  .durable {
 
-    .case-studies {
-      .content {
-        p{
-          font-size: 1.3em;
-        }
-
-        h5 {
-          font-size: 1.5em;
-        }
+    .content {
+      p{
+        font-size: 1.3em;
       }
 
-      a {
-       
-      }
-
-
-      .iphone-image {
-        height: 152px;
-        width: 74px;
-        background-size: 73px 153px;
-        position: relative;
-        bottom: 27px;
+      h5 {
+        font-size: 1.5em;
       }
     }
 
-    .start-project {
-      .grain-image {
-
-      }
-
-      .content {
-
-        h5 {
-          font-size: 1.5em;
-        }
-
-        p {
-          font-size: 1.3em;
-          text-align: center;
-        }
-        
-      }
-
-      a {
-        bottom: 8px;
-      }
+    a {
+     
     }
   }
 }
@@ -385,78 +223,40 @@
     display: inline-block;
   }
 
-  .main-content {
+  .surp-comf {
     padding-bottom: 40px;
-    .gif{
-      display: inline-block;
-    }
-
-    .gif-mobile {
-      display: none;
-    }
 
     p {
       font-size: 1.4em;
     }
   }
 
-  .sub-content {
+  .durable {
     height: 370px;
     padding: 20px 0 0 0 ;
 
-    .case-studies {
+    .content {
       text-align: left;
 
-      .content {
-        text-align: left;
-
-        h5 {
-          margin-top: 0;
-          font-size: 1.3em;
-        }
-
-        a{
-          left: 0;
-        }
-
-        p {
-          text-align: left;
-          margin-left: 0;
-          width: 290px;
-        }
+      h5 {
+        margin-top: 0;
+        font-size: 1.3em;
       }
-    }
 
-    .start-project {
-      padding-top: 0;
-      text-align: left;
+      a{
+        left: 0;
+      }
 
-      .content{
+      p {
         text-align: left;
-
-        h5 {
-          margin-top: 0;
-          font-size: 1.3em;
-        }
-
-        p {
-          text-align: left;
-          width: 80%;
-          margin: 0;
-          margin-bottom: 8px;
-        }
+        margin-left: 0;
+        width: 290px;
       }
     }
   }
-
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-
-
-
-
 //    __                        __                              
 //   / /  __ _ _ __ __ _  ___  / _\ ___ _ __ ___  ___ _ __  ___ 
 //  / /  / _` | '__/ _` |/ _ \ \ \ / __| '__/ _ \/ _ \ '_ \/ __|
@@ -473,7 +273,7 @@
     }
   }
 
-  .main-content {
+  .surp-comf {
     padding-bottom: 70px;
 
     p {
@@ -482,80 +282,31 @@
     }
   }
 
-  .sub-content {
+  .durable {
     padding-top: 40px;
     padding-bottom: 0;
-    height: 500px;
+    height: 500px;  
 
-    .case-studies {
-      text-align: left;
-      width: 46%;
+    .content {
+      height: 175px;
+      position: relative;
 
-      .left-img {
-        display: inline-block;
-        position: relative;
-        bottom: 56px;
-        z-index: -2;
-
-        .grain-image {
-          background-size: 100px 298px;
-        }
-      }  
-
-      .content {
-        height: 175px;
-        position: relative;
-
-        h5 {
-          font-size: 1.1em;
-        }
-
-        p {
-          width: 300px;
-          font-size: 1.2em;
-          line-height: 1.3em;
-        }
-
-        a {
-          position: absolute;
-          bottom: 0;
-        }
-      }
-    }
-
-    .start-project {
-      text-align: right;
-      width: 52%;
-
-      .right-img {
-        display: inline-block;
-        position: relative;
-        bottom: 50px;
+      h5 {
+        font-size: 1.1em;
       }
 
-      .content {
-        position: relative;
-        height: 175px;
-        max-width: 350px;
-        padding-left: 26px;
+      p {
+        width: 300px;
+        font-size: 1.2em;
+        line-height: 1.3em;
+      }
 
-        h5 {
-          font-size: 1.1em;
-        }
-      
-        p {
-          font-size: 1.2em;
-          line-height: 1.3em;
-        }
-
-        a {
-          position: absolute;
-          bottom: 0;
-        }
+      a {
+        position: absolute;
+        bottom: 0;
       }
     }
   }
-
 }
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
