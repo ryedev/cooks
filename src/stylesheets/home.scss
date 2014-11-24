@@ -59,6 +59,13 @@
  //                                       |___/              
 
 @media only screen { 
+  .surp-comf, .durable,
+  .crafted, .carefree {
+    padding: 24px 0;
+    p {
+      font-size: 1.2em;
+    }
+  }
 
   .hero-banner {
     height: 200px;
@@ -69,7 +76,7 @@
   }
 
   .surp-comf {
-    padding-bottom: 24px;
+    padding: 24px 0;
    
     h2 {
       // padding-top: 0;
@@ -81,6 +88,7 @@
   }
 
   .durable {
+    border-bottom: 1px solid black;
 
     .content {
       
@@ -89,10 +97,21 @@
       }
 
       p {
-        font-size: 1.2em;
         margin-bottom: 8px;
       }
     }
+  }
+
+  .crafted {
+    border-bottom: 1px solid black;
+
+    h2 {
+      margin-top: 24px;
+    }
+  }
+
+  .carefree {
+   
   }
 } 
 // END MOBILE STYLES
@@ -130,29 +149,12 @@
 
   .surp-comf {
 
-    h2 {
-      
-    }
-
-    p {
-      
-    }
   }
 
   .durable {
 
     .content {
-      p{
-        font-size: 1.3em;
-      }
 
-      h5 {
-        font-size: 1.5em;
-      }
-    }
-
-    a {
-     
     }
   }
 }
@@ -179,39 +181,14 @@
     }
   }
 
-  .cta{
-    display: inline-block;
-  }
-
   .surp-comf {
-    padding-bottom: 40px;
 
-    p {
-      font-size: 1.4em;
-    }
   }
 
   .durable {
-    height: 370px;
-    padding: 20px 0 0 0 ;
 
     .content {
       text-align: left;
-
-      h5 {
-        margin-top: 0;
-        font-size: 1.3em;
-      }
-
-      a{
-        left: 0;
-      }
-
-      p {
-        text-align: left;
-        margin-left: 0;
-        width: 290px;
-      }
     }
   }
 }
@@ -234,37 +211,12 @@
   }
 
   .surp-comf {
-    padding-bottom: 70px;
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.4em;
-    }
   }
 
   .durable {
-    padding-top: 40px;
-    padding-bottom: 0;
-    height: 500px;  
 
     .content {
-      height: 175px;
-      position: relative;
-
-      h5 {
-        font-size: 1.1em;
-      }
-
-      p {
-        width: 300px;
-        font-size: 1.2em;
-        line-height: 1.3em;
-      }
-
-      a {
-        position: absolute;
-        bottom: 0;
-      }
     }
   }
 }
