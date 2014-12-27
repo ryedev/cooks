@@ -14,19 +14,19 @@
 
   h1 {
     color: $white;
-    text-transform: uppercase;
+    font-style: uppercase;
   }
 
   h5 {
-    color: $black;
+    color: $white;
     margin: 0;
+    font-family: 'brandon-grotesque'; 
   }
 }
 
 // surprisingly comfortable section of page
 .surp-comf {
-  background: url('');
-  border-bottom: 1px solid $gray;
+  background: $secondary-background;
 
   h2 {
     text-transform: capitalize;
@@ -36,6 +36,7 @@
 
 // durable section of page
 .durable {
+  background: $secondary-background;
 
   .content{
     vertical-align: top;
@@ -51,6 +52,34 @@
   }
 }
 
+.carefree {
+  background: $white;
+}
+
+.crafted {
+  background: $tertiary-background;
+  color: $white;
+
+  h2 {
+    color: $white;
+  }
+}
+
+.etsy {
+  background: $tertiary-background;
+  color: $white;
+
+  h2 {
+    color: $white;
+    text-align: center;
+  }
+
+  p {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+  }
+}
  //               _     _ _        __ _         _           
  //   /\/\   ___ | |__ (_) | ___  / _\ |_ _   _| | ___  ___ 
  //  /    \ / _ \| '_ \| | |/ _ \ \ \| __| | | | |/ _ \/ __|
@@ -63,7 +92,7 @@
   .crafted, .carefree {
     padding: 24px 0;
     p {
-      font-size: 1.2em;
+      font-size: 1em;
     }
   }
 
@@ -72,6 +101,10 @@
 
     .overlay{
       padding-top: 50px; 
+
+      h1 {
+        margin-bottom: -6px;
+      }
     }
   }
 
@@ -88,7 +121,6 @@
   }
 
   .durable {
-    border-bottom: 1px solid black;
 
     .content {
       
@@ -103,7 +135,6 @@
   }
 
   .crafted {
-    border-bottom: 1px solid black;
 
     h2 {
       margin-top: 24px;
@@ -112,6 +143,14 @@
 
   .carefree {
    
+  }
+
+  .etsy {
+    padding: 24px 0;
+
+    button {
+      text-align: center;
+    }
   }
 } 
 // END MOBILE STYLES
@@ -146,16 +185,9 @@
       }
     }
   }
-
-  .surp-comf {
-
-  }
-
-  .durable {
-
-    .content {
-
-    }
+  .surp-comf, .durable,
+  .crafted, .carefree {
+    padding: 40px inherit;
   }
 }
 
@@ -181,8 +213,16 @@
     }
   }
 
+  .surp-comf, .durable,
+  .crafted, .carefree {
+    padding: 60px inherit;
+  }
+
   .surp-comf {
 
+    img {
+      margin-top: 16px;
+    }
   }
 
   .durable {
@@ -190,6 +230,17 @@
     .content {
       text-align: left;
     }
+  }
+
+  .crafted {
+
+    img {
+      margin-top: 42px;
+    }
+  }
+
+  .etsy {
+    padding: 50px 0;
   }
 }
 

@@ -2,7 +2,7 @@
   width: 100%;
 
   .footer-bottom {
-    background-color: $gray;
+    background-color: $footer-main;
     padding: 10px 26px;
     position: relative;
 
@@ -78,7 +78,7 @@
   }
 
   .footer-bottom-bar {
-    background-color: $black;
+    background-color: $footer-bottom;
     height: 30px;
   }
 }

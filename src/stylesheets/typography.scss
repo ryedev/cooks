@@ -1,24 +1,23 @@
-// @font-face {
-//   font-family: 'brandon';
-//   src: url('') format('truetype')
-// }
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic|Fauna+One);
 
-h1, h2, h3 {
+h1 {
   font-family: 'brandon-grotesque';
+  font-weight: 400;
+} 
+
+h2, h3 {
+  font-family: 'Playfair Display';
   font-weight: 500;
-  color: $gray;
 }
 
 h4, h5, h6 {
-  font-family: 'brandon-grotesque';
+  font-family: 'Playfair Display';
   font-weight: 400;
-  color: $gray;
 }
 
 p {
- font-family: 'brandon-grotesque';
- font-weight: 300;
- color: $gray; 
+ font-family: 'Fauna One';
+ font-weight: 400;
 }
 
 /* Document level adjustments */
