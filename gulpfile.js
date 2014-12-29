@@ -346,5 +346,5 @@ gulp.task('sendit', shell.task([
   'gulp build-step-2',
   'gulp bower-components',
   'git add dist && git commit -m "Initial dist subtree commit"',
-  'git subtree push --prefix dist origin gh-pages --force'
+  'git push origin `git subtree split --prefix dist master`:gh-pages --force'
 ]))
