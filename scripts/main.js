@@ -2,6 +2,6 @@
 
 $(document).ready(function(){
   // $('#tagline').fitText(1, { minFontSize: '46px', maxFontSize: '72x' });
-  // $('#sub-tag').fitText(4, { minFontSize: '12px', maxFontSize: '20px' });
+  $('#sub-tag').fitText(3, { minFontSize: '14px', maxFontSize: '26px' });
 });
 
