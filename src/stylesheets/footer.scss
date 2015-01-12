@@ -7,13 +7,7 @@
     position: relative;
 
     .logo {
-      display: none;
       vertical-align: top;
-      margin-top: 30px;
-      
-      img {
-        height: 90px;
-      }
     }
 
     .mobile-nav {
@@ -66,20 +60,15 @@
       margin-top: 2px;
 
       a {
-        color: $white;
-        transition: all 0.3s ease;
+        color: $dark-blue;
+        transition: all 0.05s ease;
         
         &:hover {
-          color: $black;
+          color: $white;
         }
       }
     
     }
-  }
-
-  .footer-bottom-bar {
-    background-color: $footer-bottom;
-    height: 30px;
   }
 }
 
@@ -94,49 +83,42 @@
 //                                       |___/              
 
 @media only screen {
-
   .footer {
-
     .footer-bottom {
-      padding: 10px 0;
-      height: 115px;
-
+      padding: 40px 0;
+      height: 270px;
       .logo {
-        display: none;
-        
+        text-align: center;
+        margin-bottom: 24px;
         img {
           height: 60px;
         }
       }
-
+      h2 {
+        text-align: center;
+        color: $white;
+      }
       .main-footer-nav {
         display: none;
       }
-
       .mobile-nav {
         display: block;
         text-align: center;
       }
-
       nav {
         display: inline-block;
-
         ul {
           list-style-type: none;
           text-align: center;
           margin-left: 0;
           margin-bottom: 0;
-
           li {
             display:inline-block;
-
             &:hover{
-
             }
             a {
               color: $white;
               font-size: 1.5em;
-
               &:hover {
                 color: $white;
                 border-bottom: 2px solid $white;
@@ -145,27 +127,35 @@
           }
         }
       }
-
       .links {
         display: block;
         width: 310px;
         text-align: center;
         margin: 0 auto;
-
         i {
           font-size: 0.7em;
+          background: $white;
+          padding: 9px 10px 6px;
+          border-radius: 4px;
+          transition: all 0.3s ease;
+          border: 1px solid $dark-blue;
+          &:hover{
+            background: $dark-blue;
+            border: 1px solid $white;
+          }
         }
-
       }
-
       .social {
         margin-bottom: 0;
       }
-
       .phone-number {
         margin-top: 8px;
         h5 {
+          border: 1px solid $white;
+          padding: 6px 8px 10px;
+          border-radius: 3px;
           font-size: 1.3em;
+          margin-top: 20px;
         }
         .phone-icon {
           font-size: 1.3em;
@@ -190,14 +180,10 @@
   .footer {
 
     .footer-bottom {
-      height: 130px;
+      // height: 130px;
 
       .logo {
-        display: none;
-        
-        img {
-          height: 60px;
-        }
+
       }
 
       .main-footer-nav {
@@ -209,12 +195,7 @@
       }
 
       .links {
-        display: inline-block;
-        width: 229px;
-        padding-left: 12px;
-        padding-top: 10px;
-        text-align: left;
-
+        // width: 229px;
         nav {
           display: inline-block;
 
@@ -240,8 +221,6 @@
         }
 
         .social {
-          text-align: left;
-
           i {
             font-size: 0.7em;
           }
@@ -274,11 +253,10 @@
 
     .footer-bottom {
       padding: 10px 26px 10px 10px;
-
+      height: 190px;
       .logo {
         display: inline-block;
-        margin-top: 14px;
-
+        margin-top: 32px;
         img {
           height: 82px;
         }
@@ -296,6 +274,8 @@
         text-align: right;
         float: right;
         padding-top: 10px;
+        vertical-align: top;
+        margin-top: 30px;
 
         .social {
           display: inline-block;
@@ -334,12 +314,7 @@
   .footer {
 
     .footer-bottom {
-      padding: 10px 36px 10px 26px;
-      height: 135px;
-
       .logo {
-        margin-left: -10px;
-
         img {
           height: 90px;
         }
