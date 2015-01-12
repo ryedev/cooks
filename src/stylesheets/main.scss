@@ -23,7 +23,7 @@ body {
 .row {
   height: 100%;
   padding: 0 2%;
-  max-width: 1000px;
+  max-width: 960px;
   position: relative;
 }
 
@@ -31,6 +31,9 @@ p {
   text-align: left;
 }
 
+img {
+  border-radius: 6px;
+}
  //  _   _   _     _   _   _   _     _              
  // | | | | | |_  (_) | | (_) | |_  (_)   ___   ___ 
  // | | | | | __| | | | | | | | __| | |  / _ \ / __|
