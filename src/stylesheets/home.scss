@@ -45,6 +45,10 @@
       color: $gray;
     }
   }
+
+  img {
+    box-shadow: 0px 0px 22px -4px #929292;
+  }
 }
 
 .carefree {
@@ -59,13 +63,17 @@
 }
 
 .crafted {
-  background: $black;
+  background: $light-blue;
   // background: $tertiary-background;
   color: $white;
 
   h2 {
     color: $white;
   }
+}
+
+.design {
+
 }
 
 .etsy {
@@ -92,7 +100,7 @@
  //                                       |___/              
 
 @media only screen { 
-  .surp-comf, .durable,
+  .surp-comf, .durable, .design,
   .crafted, .carefree {
     padding: 40px 0;
     p {
@@ -205,7 +213,7 @@
       }
     }
   }
-  .surp-comf, .durable,
+  .surp-comf, .durable, .design,
   .crafted, .carefree {
     padding: 60px 0 90px;
     font-size: 1.1em;
@@ -241,7 +249,7 @@
     }
   }
 
-  .surp-comf, .durable,
+  .surp-comf, .durable, .design,
   .crafted, .carefree {
     padding: 60px inherit;
   }
@@ -289,9 +297,15 @@
       }
     }
   }
-  .surp-comf, .durable,
+  .surp-comf, .durable, .design,
   .crafted, .carefree {
     padding: 100px 0;
+  }
+
+  .durable {
+    img{
+      margin-top: 20px;
+    }
   }
 }
 
