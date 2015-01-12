@@ -55,11 +55,12 @@
   background: $black;
   position: relative;
   z-index: 2;
-
   h2, p {
     color: $white;
   }
-  // background: $white;
+  img {
+    box-shadow: 0px 0px 7px 3px #636363;
+  }
 }
 
 .crafted {
