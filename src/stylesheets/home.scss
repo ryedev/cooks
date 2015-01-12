@@ -73,7 +73,9 @@
 }
 
 .design {
-
+  img {
+    box-shadow: 0px 0px 22px -4px #929292;
+  }
 }
 
 .etsy {
@@ -220,7 +222,7 @@
     font-size: 1.1em;
   }
 
-  .carefree {
+  .carefree, .design {
     img {
       margin-top: 24px;
     }
@@ -253,6 +255,9 @@
   .surp-comf, .durable, .design,
   .crafted, .carefree {
     padding: 60px inherit;
+    h2 {
+      margin-top: 0;
+    }
   }
 
   .surp-comf {
