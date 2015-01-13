@@ -19,6 +19,13 @@
   
 }
 
+.carefree, .durable, 
+.design, .crafted {
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
 // surprisingly comfortable section of page
 .surp-comf {
   background: $secondary-background;
