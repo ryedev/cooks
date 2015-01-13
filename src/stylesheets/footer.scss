@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-
+  position: relative;
   .footer-bottom {
     background-color: $dark-blue;
     padding: 10px 26px;
@@ -159,6 +159,17 @@
         }
         .phone-icon {
           font-size: 1.3em;
+        }
+      }
+      .signature {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        span {
+          color: $white;
+        }
+        img {
+          height: 30px;
         }
       }
     }
