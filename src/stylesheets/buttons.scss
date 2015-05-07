@@ -3,8 +3,8 @@
   color: $white;
   border-radius: 4px;
 
-  &.etsy-btn {
-    background: $etsy-color;
+  &.cta-btn {
+    background: $cta-color;
   }
 }
 
@@ -16,11 +16,22 @@
  //                                       |___/              
 
 @media only screen { 
-  button {
-
-    &.etsy-btn {
+  .button {
+    &.cta-btn {
       font-size: 1.2em;
+      font-style: italic;
       margin: 0 auto;
+      position: absolute;
+      // right: 0;
+      bottom: -100px;
+      @media only screen and (min-width: 640px){
+        bottom: -150px;
+      }
+      &.btm-btn {
+        // position: relative;
+        bottom: -80px;
+        left: 36%;
+      }
     }
   }
 }
